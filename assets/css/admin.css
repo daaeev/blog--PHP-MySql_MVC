@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(255, 242, 242);
+}
+
+.tab_container {
+    width: 70%;
+    margin: 0px auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.tab_container header {
+    display: flex;
+}
+
+.tab_container header .tab_link:hover {
+    background:rgb(255, 179, 179);
+}
+
+.tab_container section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tab_container #create_form input, .tab_container form textarea {
+    width: 70%;
+    height: 40px;
+    margin-bottom: 40px;
+    padding: 5px 5px 5px 5px;
+    outline: none;
+    border: none;
+    background: rgb(255, 226, 108);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.tab_container form textarea {
+    resize: vertical;
+}
+
+.tab_container #create_form:target, .tab_container #view:target {
+    display: block;
+}
+
+.tab_container #create_form .form_btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+    font-size: 17px;
+}
+
+.tab_container #create_form .form_btn:hover {
+    background: #fe6637;
+    color: #fff;
+}
+
+.tab_container #view {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.tab_container .article {
+    background: #fff;
+    padding: 0px 20px 5px 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+}
+
+.tab_container .article .fields {
+    margin-right: 80px;
+    font-size: 25px;
+}
+
+.tab_container .article #title {
+    display: inline-block;
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.tab_container .article a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.tab_container .article a:hover {
+    color:rgb(121, 168, 255)
+}
+
+.tab_container .article #delete:hover {
+    color: rgb(255, 133, 133);
+}
